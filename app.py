@@ -1,3 +1,8 @@
 import streamlit as st
 
-st.title('Restaurant Revenue Prediction')
+def main():
+    st.title('Restaurant Revenue Prediction')
+
+
+if __name__=='__main__':
+    main()
