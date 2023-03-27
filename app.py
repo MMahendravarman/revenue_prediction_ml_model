@@ -1,4 +1,5 @@
 import streamlit as st
+import pickle
 
 pickle_in = open("revenue_prediction.pkl","rb")
 model=pickle.load(pickle_in)
