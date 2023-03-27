@@ -13,6 +13,7 @@ from sklearn.model_selection import GridSearchCV
 pickle_in = open("revenue_prediction.pkl","rb")
 model=pickle.load(pickle_in)
 
+
 def main():
     st.title('Restaurant Revenue Prediction')
     html_temp = """
@@ -47,7 +48,7 @@ def main():
     st.success('The output is {}'.format(result))
 
 def predict_revenue(year,Big_Cities,Other,P1,P2,P4,P5,P6,P7,P11,P14,P15,P17,P19,P20,P21,P23,P24,P25,P28):
-    prediction=model.predict([[year,Big_Cities,Other,P1,P2,P4,P5,P6,P7,P11,P14,P15,P17,P19,P20,P21,P23,P24,P25,P28]])
+    prediction=model.predict(pd.DataFrame([[year,Big_Cities,Other,P1,P2,P4,P5,P6,P7,P11,P14,P15,P17,P19,P20,P21,P23,P24,P25,P28]]))
     print(prediction)
     return prediction    
 
