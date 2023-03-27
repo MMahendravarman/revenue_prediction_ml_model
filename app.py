@@ -15,6 +15,7 @@ model=pickle.load(pickle_in)
 
 def main():
     st.title('Restaurant Revenue Prediction')
+    result=""
     if st.button("Predict"):
         result=predict_revenue()
     st.success('The output is {}'.format(result))
