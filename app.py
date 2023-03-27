@@ -31,6 +31,7 @@ def main():
     P6 = st.text_input("P6","Type Here")
     P7 = st.text_input("P7","Type Here")
     P11 = st.text_input("P11","Type Here")
+    P14 = st.text_input("P14","Type Here")
     P15 = st.text_input("P15","Type Here")
     P17 = st.text_input("P17","Type Here")
     P19 = st.text_input("P19","Type Here")
